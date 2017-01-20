@@ -40,5 +40,8 @@ Promise.prototype.onRejected
 覺得以後Promise化的 lib會越來越多，
 到時用async-await寫非同步將變的沒有難度可言(雖然目前也沒多難就是了)
 只剩寫底層api的人會需要學Promise和其運作原理
+參考
+http://liubin.org/promises-book/
 
+這應該是目前寫的最詳細、完整、易懂的 Promise教學
 */
