@@ -5,10 +5,11 @@ var quickSort = function(arr) {　　
     var left = [];　　
     var right = [];
     //比基數小的就放左陣列，比基數大的放右陣列
-    arr.map(num => num < pivot ? left.push(num) : right.push(num))
-    //排序過的左陣列+基數+排序過的右陣列
+    arr.map(num => pivot > num ? left.push(num) : right.push(num))
+    //回傳排序過的左陣列+基數+排序過的右陣列
     return quickSort(left).concat([pivot], quickSort(right));
 };
+
 function randomNums(minNum,maxNum) {
     var list = [];
     for (var i = 0; i < 10; i++) {
